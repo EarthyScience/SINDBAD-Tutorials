@@ -18,7 +18,7 @@ Note the root directory of where the repo is, for convenience, we'll call it `re
 
 The tutorial files are stored in the `tutorials` subdirectory, and organised by topic or summer school or other event. The current tutorials are:
 - ai4pex_2025
-- which_tutorial
+- ellis_jena_2025
 
 From now on, we'll refer to the current `tutorial` directory as `which_tutorial`.
 
