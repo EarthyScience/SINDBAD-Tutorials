@@ -6,7 +6,7 @@ A central repository to develop SINDBAD tutorials
 The following command will install the tutorial files and SINDBAD itself.
 
 ```bash
-git clone --recursive https://github.com/ELLIS-Jena-Summer-School/SINDBAD-Tutorials.git
+git clone --recursive https://github.com/EarthyScience/SINDBAD-Tutorials.git
 ```
 
 If cloned without the recursive flag, you can run to include SINDBAD as a submodule:
@@ -15,6 +15,13 @@ git submodule update --init --recursive
 ```
 
 Note the root directory of where the repo is, for convenience, we'll call it `repo_root` from now on.
+
+The tutorial files are stored in the `tutorials` subdirectory, and organised by topic or summer school or other event. The current tutorials are:
+- ai4pex_2025
+- which_tutorial
+
+From now on, we'll refer to the current `tutorial` directory as `which_tutorial`.
+
 
 ## Install Julia
 
@@ -30,9 +37,9 @@ https://marketplace.visualstudio.com/items?itemName=julialang.language-server
 # Install Tutorial Environment
 Open a terminal at the root of this repo (`repo_root`)
 
-Go to the `ellis_jena_2025` tutorial folder:
+Go to the `which_tutorial` tutorial folder:
 ```bash
-cd tutorials/ellis_jena_2025
+cd tutorials/which_tutorial
 ```
 
 Start up `Julia`, e.g., in Terminal:
@@ -41,7 +48,7 @@ Start up `Julia`, e.g., in Terminal:
 julia
 ```
 
-or in VSCode, open the `tutorials/ellis_jena_2025` folder and start the REPL (Ctrl+Shift+J)
+or in VSCode, open the `tutorials/which_tutorial` folder and start the REPL (Ctrl+Shift+J)
 
 Activate an environment in the folder with:
 ```julia
@@ -49,7 +56,7 @@ using Pkg
 Pkg.activate("./")
 ```
 
-The prompt should change to `(ellis_jena_2025) pkg>`.
+The prompt should change to `(which_tutorial) pkg>`.
 
 Instantiate/install the packages in the environment with:
 ```julia
@@ -57,13 +64,13 @@ Pkg.instantiate()
 ```
 
 # Set REPL environment
-In VS code, set the `ellis_jena_2025` as the active project by clicking on the `Julia env:` dropdown and selecting `ellis_jena_2025` as the folder. This should change the default environment for the REPL.
+In VS code, set the `which_tutorial` as the active project by clicking on the `Julia env:` dropdown and selecting `which_tutorial` as the folder. This should change the default environment for the REPL.
 
 
 # Download Tutorial Data
 Download the data for the tutorial from [here](https://nextcloud.bgc-jena.mpg.de/s/Byj9FKr2mr7QYgZ). 
-Unzip the file into `tutorials/data/ellis_jena_2025`. *You may need to create the directory.*
+Unzip the file into `tutorials/data/which_tutorial`. *You may need to create the directory.*
 
 # Tutorials
 
-The tutorials are located under `tutorials/ellis_jena_2025`. Follow the instructions in the `.jl` scripts or `.ipynb` notebooks.
+The tutorials are located under `tutorials/which_tutorial`. Follow the instructions in the `.jl` scripts or `.ipynb` notebooks.
